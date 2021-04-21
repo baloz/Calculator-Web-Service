@@ -12,11 +12,9 @@ public class CalculatorService {
         return new Calculator().add(params.getValueOne(), params.getValueTwo());
     }
 
-    @GetMapping("/getParams")
-    public Params getParams(){
-        final Params params = new Params();
-        params.setValueOne(20.0);
-        params.setValueTwo(30.0);
-        return params;
+    @RequestMapping(value = "/multiply", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.OK)
+    public double getMultiplicationResult(@RequestBody  Params params) {
+        return new Calculator().multiply(params.getValueOne(), params.getValueTwo());
     }
-}
+ }
