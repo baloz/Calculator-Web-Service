@@ -17,4 +17,6 @@ public class CalculatorService {
     public double getMultiplicationResult(@RequestBody  Params params) {
         return new Calculator().multiply(params.getValueOne(), params.getValueTwo());
     }
+
+
  }

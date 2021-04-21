@@ -21,4 +21,12 @@ public class CalculatorTest {
         final double expected = 20.0;
         assertEquals(expected, result);
     }
+
+    @Test
+    void shouldReturnExpectedDivisionResultIfInputsAreValid() {
+        final Calculator calculator = new Calculator();
+        final double result = calculator.divide(20.0, 5.0);
+        final double expected = 4.0;
+        assertEquals(expected, result);
+    }
 }
