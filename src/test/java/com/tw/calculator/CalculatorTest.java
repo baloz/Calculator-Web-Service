@@ -14,4 +14,11 @@ public class CalculatorTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void shouldReturnExpectedMultiplicationResultIfInputsAreValid() {
+        final Calculator calculator = new Calculator();
+        final double result = calculator.multiply(4.0, 5.0);
+        final double expected = 20.0;
+        assertEquals(expected, result);
+    }
 }
