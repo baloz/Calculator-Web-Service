@@ -1,14 +1,12 @@
 package com.tw.calculator;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CalculatorService {
-
-
+    public static boolean divisionViewFlag = false;
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.OK)
@@ -22,5 +20,16 @@ public class CalculatorService {
         return new Calculator().multiply(params.getValueOne(), params.getValueTwo());
     }
 
+    @RequestMapping(value = "/divide", method = RequestMethod.POST)
+    public ResponseEntity<Double> getDivisionResult(@RequestBody  Params params){
+        final double divide = new Calculator().divide(params.getValueOne(), params.getValueTwo());
+        if (divisionViewFlag)return new ResponseEntity<Double>(divide, HttpStatus.OK);
+        else return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+    }
 
+    @RequestMapping(value = "/toggleDivision", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.OK)
+    public void setDivisionViewFlag(@RequestBody  boolean status){
+        divisionViewFlag = status;
+    }
  }
