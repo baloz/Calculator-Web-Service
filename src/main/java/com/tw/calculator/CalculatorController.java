@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class CalculatorService {
+public class CalculatorController {
     public static boolean divisionViewFlag = false;
 
     @Autowired
