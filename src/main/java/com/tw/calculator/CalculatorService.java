@@ -1,6 +1,6 @@
 package com.tw.calculator;
 
-public class Calculator {
+public class CalculatorService {
     public double add(double valueOne, double valueTwo) {
         return valueOne + valueTwo;
     }

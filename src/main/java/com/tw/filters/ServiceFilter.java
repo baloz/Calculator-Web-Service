@@ -1,5 +1,6 @@
-package com.tw.calculator;
+package com.tw.filters;
 
+import com.tw.calculator.CalculatorConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;

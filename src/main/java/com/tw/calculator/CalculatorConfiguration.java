@@ -3,6 +3,7 @@ package com.tw.calculator;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+@SuppressWarnings("unused")
 @Component
 @ConfigurationProperties("calculatorapi")
 public class CalculatorConfiguration {
