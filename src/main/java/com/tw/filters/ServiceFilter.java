@@ -33,10 +33,13 @@ public class ServiceFilter implements Filter {
                 ((HttpServletResponse) res).sendError(HttpServletResponse.SC_NOT_FOUND, "The Endpoint Is Not Found");
             }
         } catch (NoSuchMethodException e) {
+            ((HttpServletResponse) res).sendError(HttpServletResponse.SC_NOT_FOUND, "The Endpoint Is Not Found");
             e.printStackTrace();
         } catch (IllegalAccessException e) {
+            ((HttpServletResponse) res).sendError(HttpServletResponse.SC_NOT_FOUND, "The Endpoint Is Not Found");
             e.printStackTrace();
         } catch (InvocationTargetException e) {
+            ((HttpServletResponse) res).sendError(HttpServletResponse.SC_NOT_FOUND, "The Endpoint Is Not Found");
             e.printStackTrace();
         }
 
