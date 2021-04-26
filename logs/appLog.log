@@ -1,0 +1,50 @@
+2021-04-26 15:25:33,439 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1671 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:25:33,441 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:25:34,051 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:25:34,240 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:25:34,240 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:25:34,241 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 0 ms
+2021-04-26 15:25:34,258 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.09 seconds (JVM running for 7.143)
+2021-04-26 15:25:34,299 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:25:34,373 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:25:34,402 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:29:09,138 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1725 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:29:09,140 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:29:09,758 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:29:09,952 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:29:09,953 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:29:09,954 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:29:09,976 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.098 seconds (JVM running for 7.065)
+2021-04-26 15:29:10,016 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:29:10,089 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:29:10,111 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:30:06,156 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1736 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:30:06,158 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:30:06,788 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:30:06,973 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:30:06,974 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:30:06,975 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:30:06,998 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.092 seconds (JVM running for 7.093)
+2021-04-26 15:30:07,037 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:30:07,111 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:30:07,133 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:30:42,826 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1746 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:30:42,829 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:30:43,441 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:30:43,620 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:30:43,620 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:30:43,621 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:30:43,641 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.068 seconds (JVM running for 7.075)
+2021-04-26 15:30:43,679 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:30:43,751 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:30:43,779 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:35:49,998 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1844 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:35:50,002 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:35:50,857 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:35:51,101 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:35:51,101 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:35:51,103 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:35:51,127 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.462 seconds (JVM running for 7.852)
+2021-04-26 15:35:51,178 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:35:51,274 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:35:51,324 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
