@@ -48,3 +48,29 @@
 2021-04-26 15:35:51,178 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
 2021-04-26 15:35:51,274 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
 2021-04-26 15:35:51,324 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:39:29,864 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1920 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:39:29,867 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:39:30,542 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:39:30,759 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:39:30,759 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:39:30,760 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:39:30,782 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.244 seconds (JVM running for 7.579)
+2021-04-26 15:39:30,825 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /multiply
+2021-04-26 15:39:30,826 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :null
+2021-04-26 15:39:30,866 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:39:30,964 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:39:30,988 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:44:42,175 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Starting CalculatorControllerTest using Java 15.0.2 on Venkatas-MacBook-Pro.local with PID 1976 (started by saireddyavs in /Users/saireddyavs/Calculator-Web-Service)
+2021-04-26 15:44:42,177 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-04-26 15:44:42,857 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 15:44:43,078 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-04-26 15:44:43,078 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2021-04-26 15:44:43,079 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 1 ms
+2021-04-26 15:44:43,111 [INFO] com.tw.calculator.CalculatorControllerTest [Test worker] Started CalculatorControllerTest in 6.251 seconds (JVM running for 7.617)
+2021-04-26 15:44:43,154 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /multiply
+2021-04-26 15:44:43,239 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:44:43,267 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /divide
+2021-04-26 15:44:43,269 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:44:43,278 [INFO] com.tw.filters.LogFilter [Test worker] Logging Request  POST : /add
+2021-04-26 15:44:43,281 [INFO] com.tw.filters.LogFilter [Test worker] Logging Response :application/json
+2021-04-26 15:44:43,299 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
