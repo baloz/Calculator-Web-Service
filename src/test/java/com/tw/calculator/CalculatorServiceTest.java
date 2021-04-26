@@ -1,6 +1,5 @@
-package com.tw;
+package com.tw.calculator;
 
-import com.tw.calculator.CalculatorService;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
