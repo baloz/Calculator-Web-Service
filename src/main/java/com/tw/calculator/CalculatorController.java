@@ -1,14 +1,13 @@
 package com.tw.calculator;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+@SuppressWarnings("unused")
 @RestController
 public class CalculatorController {
 
-    @Autowired
-    private CalculatorConfiguration calculatorConfiguration;
+
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.OK)
@@ -28,18 +27,5 @@ public class CalculatorController {
     }
 
 
-    @RequestMapping(value = "/enablefeature", method = RequestMethod.POST)
-    @ResponseStatus(HttpStatus.OK)
-    public String enablefeature() {
-        calculatorConfiguration.setMultiply(true);
-        return "Multiply Is enabled";
-    }
-
-    @RequestMapping(value = "/disablefeature", method = RequestMethod.POST)
-    @ResponseStatus(HttpStatus.OK)
-    public String disablefeature() {
-        calculatorConfiguration.setMultiply(false);
-        return "Multiply is Disabled";
-    }
 
 }
