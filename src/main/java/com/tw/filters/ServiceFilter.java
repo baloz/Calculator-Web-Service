@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ServiceFilter implements Filter {
 
 
-    @Value("${calculatorapi.multiply}")
+    @Value("${calculatorapi.multiply:false}")
     private boolean enableMultiplication;
 
     @Override
@@ -25,6 +25,7 @@ public class ServiceFilter implements Filter {
 
         if (req.getRequestURI().equals("/multiply") && !enableMultiplication){
             res.sendError(HttpServletResponse.SC_NOT_FOUND, "The Endpoint Is Not Found");
+            System.out.println(enableMultiplication);
         }
         else{
             chain.doFilter(request, response);

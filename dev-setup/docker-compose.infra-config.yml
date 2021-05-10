@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  configserver:
+    container_name: configserver
+    image: pavanbaloju/spring-config-server:latest
+    ports:
+      - "8081:8888"

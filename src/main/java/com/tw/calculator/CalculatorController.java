@@ -2,6 +2,8 @@ package com.tw.calculator;
 
 import com.tw.exceptions.InvalidValuesException;
 import com.tw.exceptions.ZeroDivisorException;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SuppressWarnings("unused")
 @RestController
+@RefreshScope
 public class CalculatorController {
+    @Value("${myname:asdfsdf}")
+    private String name;
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public ResponseEntity<Double> getAdditionResult(@RequestBody Params params) throws InvalidValuesException {
@@ -31,6 +36,12 @@ public class CalculatorController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public ResponseEntity<String> test(){
+
+        return new ResponseEntity<>(name, HttpStatus.OK);
+    }
 
 
 }
