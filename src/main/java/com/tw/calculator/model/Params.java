@@ -1,4 +1,4 @@
-package com.tw.calculator;
+package com.tw.calculator.model;
 
 public class Params {
     double valueOne, valueTwo;

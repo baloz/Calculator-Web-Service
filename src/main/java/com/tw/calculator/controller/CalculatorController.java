@@ -1,5 +1,7 @@
-package com.tw.calculator;
+package com.tw.calculator.controller;
 
+import com.tw.calculator.model.CalculatorService;
+import com.tw.calculator.model.Params;
 import com.tw.exceptions.InvalidValuesException;
 import com.tw.exceptions.ZeroDivisorException;
 import org.springframework.beans.factory.annotation.Value;

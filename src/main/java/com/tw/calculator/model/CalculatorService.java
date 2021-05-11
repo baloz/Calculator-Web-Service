@@ -1,4 +1,4 @@
-package com.tw.calculator;
+package com.tw.calculator.model;
 
 import com.tw.Errorcodes.ErrorCodes;
 import com.tw.exceptions.InvalidValuesException;
