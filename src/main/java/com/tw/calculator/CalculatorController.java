@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SuppressWarnings("unused")
 @RestController
 @RefreshScope
+
 public class CalculatorController {
-    @Value("${myname:asdfsdf}")
+    @Value("${myname}")
     private String name;
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)

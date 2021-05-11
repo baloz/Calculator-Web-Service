@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ServiceFilter implements Filter {
 
 
-    @Value("${calculatorapi.multiply:false}")
+    @Value("${calculatorapi.multiply}")
     private boolean enableMultiplication;
 
     @Override
