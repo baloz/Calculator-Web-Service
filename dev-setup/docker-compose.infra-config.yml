@@ -5,3 +5,9 @@ services:
     image: pavanbaloju/spring-config-server:latest
     ports:
       - "8081:8888"
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"
+      - "15672:15672"

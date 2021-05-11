@@ -158,3 +158,1169 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'ca
 2021-05-11 08:59:34,460 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2021-05-11 08:59:34,461 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
 2021-05-11 08:59:52,309 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:05:44,848 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:05:50,307 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=396db9590d0cf866c5487d11f5735476267afa37, state=null
+2021-05-11 10:05:50,308 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:05:50,332 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:05:51,219 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:05:51,524 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:05:51,538 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:05:51,538 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:05:51,626 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:05:51,626 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1268 ms
+2021-05-11 10:05:51,927 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:05:52,401 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:05:52,439 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:05:52,455 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 12.424 seconds (JVM running for 12.762)
+2021-05-11 10:07:20,656 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:07:20,656 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:07:20,658 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-05-11 10:07:20,664 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  GET : /test
+2021-05-11 10:07:20,709 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:08:42,935 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  GET : /busrefresh
+2021-05-11 10:08:42,941 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 10:09:44,147 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  GET : /test
+2021-05-11 10:09:44,150 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:09:58,043 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:09:58,045 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:10:03,138 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /actuator/refresh
+2021-05-11 10:10:04,172 [INFO] org.springframework.cloud.commons.util.InetUtils [http-nio-8080-exec-10] Cannot determine local hostname
+2021-05-11 10:10:04,236 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-10] Fetching config from server at : http://localhost:8081
+2021-05-11 10:10:04,903 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-10] Located environment: name=spring-config-server, profiles=[development], label=null, version=396db9590d0cf866c5487d11f5735476267afa37, state=null
+2021-05-11 10:10:04,903 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [http-nio-8080-exec-10] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:10:04,906 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-10] The following profiles are active: development
+2021-05-11 10:10:04,913 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-10] Started application in 1.752 seconds (JVM running for 265.214)
+2021-05-11 10:10:05,062 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 10:10:14,701 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  GET : /test
+2021-05-11 10:10:14,704 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:11:43,517 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:11:43,522 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :null
+2021-05-11 10:12:34,874 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /add
+2021-05-11 10:12:34,880 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/json
+2021-05-11 10:12:46,991 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /multiply
+2021-05-11 10:12:46,993 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :application/json
+2021-05-11 10:13:36,857 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:13:36,858 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:13:56,853 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:13:56,856 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 10:14:06,682 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /bus-refresh
+2021-05-11 10:14:06,683 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:14:10,483 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /bus-refresh/
+2021-05-11 10:14:10,484 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :null
+2021-05-11 10:15:00,580 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:15:46,311 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:15:47,482 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=1431f6487c92a7c90f175e6069736de2ce7e92d2, state=null
+2021-05-11 10:15:47,483 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:15:47,501 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:15:48,150 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:15:48,368 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:15:48,378 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:15:48,378 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:15:48,460 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:15:48,461 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 943 ms
+2021-05-11 10:15:48,763 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:15:49,247 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:15:49,288 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:15:49,304 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 6.688 seconds (JVM running for 7.023)
+2021-05-11 10:16:04,590 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:16:04,595 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:16:04,596 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-05-11 10:16:04,603 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  GET : /test
+2021-05-11 10:16:04,638 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:20:29,528 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  GET : /test
+2021-05-11 10:20:29,532 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:20:32,998 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /bus-refresh/
+2021-05-11 10:20:33,004 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:20:38,376 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /busrefresh
+2021-05-11 10:20:38,378 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:20:47,071 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:20:47,074 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 10:20:48,043 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:20:48,045 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:20:52,051 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:20:52,053 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :null
+2021-05-11 10:21:02,449 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /add
+2021-05-11 10:21:02,468 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/json
+2021-05-11 10:23:30,201 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:23:30,205 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :null
+2021-05-11 10:25:21,989 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:26:11,577 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:26:12,790 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=549fb4f7ac4e76b2ef7b7ff0c928ebdbad6a0cb0, state=null
+2021-05-11 10:26:12,791 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:26:12,819 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:26:13,502 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:26:13,692 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:26:13,701 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:26:13,701 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:26:13,768 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:26:13,768 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 928 ms
+2021-05-11 10:26:14,041 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:26:14,498 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:26:14,539 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:26:14,554 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.712 seconds (JVM running for 4.018)
+2021-05-11 10:26:20,677 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:26:20,678 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:26:20,680 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2021-05-11 10:26:20,687 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:26:20,701 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :null
+2021-05-11 10:26:23,893 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /add
+2021-05-11 10:26:23,911 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :application/json
+2021-05-11 10:27:11,102 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:27:17,245 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:27:17,939 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=549fb4f7ac4e76b2ef7b7ff0c928ebdbad6a0cb0, state=null
+2021-05-11 10:27:17,940 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:27:17,958 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:27:18,589 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:27:18,790 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:27:18,798 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:27:18,799 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:27:18,864 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:27:18,864 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 887 ms
+2021-05-11 10:27:19,160 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:27:19,635 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:27:19,679 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:27:19,695 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 7.163 seconds (JVM running for 7.531)
+2021-05-11 10:27:24,890 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:27:24,890 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:27:24,891 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-05-11 10:27:24,898 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  GET : /test
+2021-05-11 10:27:24,938 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:27:28,629 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:27:28,634 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 10:32:57,864 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:32:57,868 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:32:59,092 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:32:59,093 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:34:06,323 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /refresh
+2021-05-11 10:34:06,327 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :null
+2021-05-11 10:34:21,670 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /actuator/refresh
+2021-05-11 10:34:22,699 [INFO] org.springframework.cloud.commons.util.InetUtils [http-nio-8080-exec-2] Cannot determine local hostname
+2021-05-11 10:34:22,763 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Fetching config from server at : http://localhost:8081
+2021-05-11 10:34:29,722 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Located environment: name=spring-config-server, profiles=[development], label=null, version=549fb4f7ac4e76b2ef7b7ff0c928ebdbad6a0cb0, state=null
+2021-05-11 10:34:29,722 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [http-nio-8080-exec-2] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:34:29,725 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-2] The following profiles are active: development
+2021-05-11 10:34:29,733 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-2] Started application in 8.04 seconds (JVM running for 437.571)
+2021-05-11 10:34:29,895 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 10:35:04,180 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /actuator/refresh
+2021-05-11 10:35:04,246 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-1] Fetching config from server at : http://localhost:8081
+2021-05-11 10:35:05,627 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-1] Located environment: name=spring-config-server, profiles=[development], label=null, version=62e9589d127c7afd2aa0d07f029b9cddc1d306f0, state=null
+2021-05-11 10:35:05,627 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [http-nio-8080-exec-1] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:35:05,630 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-1] The following profiles are active: development
+2021-05-11 10:35:05,636 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-1] Started application in 1.453 seconds (JVM running for 473.474)
+2021-05-11 10:35:05,744 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 10:35:09,668 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  GET : /test
+2021-05-11 10:35:09,671 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:35:17,899 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /actuator/refresh
+2021-05-11 10:35:17,958 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-4] Fetching config from server at : http://localhost:8081
+2021-05-11 10:35:18,551 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-4] Located environment: name=spring-config-server, profiles=[development], label=null, version=62e9589d127c7afd2aa0d07f029b9cddc1d306f0, state=null
+2021-05-11 10:35:18,552 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [http-nio-8080-exec-4] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:35:18,554 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-4] The following profiles are active: development
+2021-05-11 10:35:18,561 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-4] Started application in 0.658 seconds (JVM running for 486.398)
+2021-05-11 10:35:18,637 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 10:35:26,131 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:35:26,133 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 10:35:27,839 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:35:27,841 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:36:08,625 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:36:08,627 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:36:32,728 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:36:32,730 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 10:38:24,194 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:41:01,656 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:41:07,124 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=62e9589d127c7afd2aa0d07f029b9cddc1d306f0, state=null
+2021-05-11 10:41:07,125 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:41:07,152 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:41:07,887 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:41:08,101 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:41:08,110 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:41:08,111 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:41:08,198 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:41:08,199 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1029 ms
+2021-05-11 10:41:08,513 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:41:09,152 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:41:09,200 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:41:09,216 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 8.257 seconds (JVM running for 8.618)
+2021-05-11 10:41:15,766 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:41:15,766 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:41:15,768 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2021-05-11 10:41:15,773 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /add
+2021-05-11 10:41:15,826 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/json
+2021-05-11 10:41:19,955 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  GET : /test
+2021-05-11 10:41:19,958 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:42:11,048 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  GET : /test
+2021-05-11 10:42:11,050 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:42:15,788 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:42:15,792 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 10:42:17,164 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:42:17,165 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:42:24,245 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:42:24,247 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:42:31,567 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /busrefresh
+2021-05-11 10:42:31,569 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 10:42:35,386 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /bus-refresh
+2021-05-11 10:42:35,387 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:42:39,415 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /refresh
+2021-05-11 10:42:39,416 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :null
+2021-05-11 10:46:20,461 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:46:22,613 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:46:23,332 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 10:46:23,333 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:46:23,355 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:46:24,041 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=0861879b-9d7f-3365-8bee-73616838eb6e
+2021-05-11 10:46:24,247 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:46:24,256 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:46:24,256 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:46:24,343 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:46:24,343 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 969 ms
+2021-05-11 10:46:24,644 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:46:25,111 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 0 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:46:25,152 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:46:25,170 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.196 seconds (JVM running for 3.483)
+2021-05-11 10:46:34,782 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:46:34,782 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:46:34,783 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-05-11 10:46:34,788 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /bus-refresh
+2021-05-11 10:46:34,800 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :null
+2021-05-11 10:46:48,460 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:46:48,461 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 10:46:54,683 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:46:54,685 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :null
+2021-05-11 10:46:55,812 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:46:55,813 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 10:47:26,296 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:47:26,297 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:50:12,849 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:50:14,842 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:50:15,527 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 10:50:15,528 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:50:15,550 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:50:16,231 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:50:16,408 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:50:16,419 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:50:16,419 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:50:16,499 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:50:16,500 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 930 ms
+2021-05-11 10:50:16,782 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:50:17,325 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:50:17,371 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:50:17,388 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.211 seconds (JVM running for 3.516)
+2021-05-11 10:50:26,055 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:50:26,055 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:50:26,057 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-05-11 10:50:26,062 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:50:26,074 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :null
+2021-05-11 10:50:32,041 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/busrefresh
+2021-05-11 10:50:32,043 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 10:50:40,110 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /bus-refresh
+2021-05-11 10:50:40,113 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :null
+2021-05-11 10:50:41,421 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /bus-refresh
+2021-05-11 10:50:41,423 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 10:50:50,299 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /bus-refresh
+2021-05-11 10:50:50,301 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:50:55,954 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 10:50:55,956 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:51:53,467 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/info
+2021-05-11 10:51:53,470 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:51:53,470 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 10:51:57,008 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /actuator/
+2021-05-11 10:51:57,008 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:51:57,008 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:52:01,385 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  POST : /actuator/health
+2021-05-11 10:52:01,386 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:01,386 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :null
+2021-05-11 10:52:09,682 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /actuator/health
+2021-05-11 10:52:09,683 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:09,683 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :null
+2021-05-11 10:52:10,722 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /actuator/health
+2021-05-11 10:52:10,722 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:10,723 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :null
+2021-05-11 10:52:11,207 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/health
+2021-05-11 10:52:11,208 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:11,208 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 10:52:19,370 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /add
+2021-05-11 10:52:19,388 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :application/json
+2021-05-11 10:52:20,121 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /add
+2021-05-11 10:52:20,123 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/json
+2021-05-11 10:52:23,790 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/health
+2021-05-11 10:52:23,791 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:23,791 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 10:52:27,543 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  GET : /test
+2021-05-11 10:52:27,547 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:52:29,053 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  GET : /test
+2021-05-11 10:52:29,055 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:52:40,742 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /actuator/health
+2021-05-11 10:52:40,743 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:52:40,743 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 10:52:57,605 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:52:59,828 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:53:00,502 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 10:53:00,503 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:53:00,523 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:53:01,285 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:53:01,475 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:53:01,483 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:53:01,484 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:53:01,572 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:53:01,573 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1032 ms
+2021-05-11 10:53:01,866 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:53:02,379 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:53:02,419 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:53:02,438 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.265 seconds (JVM running for 3.592)
+2021-05-11 10:53:04,649 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:53:04,649 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:53:04,651 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-05-11 10:53:04,655 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /actuator/health
+2021-05-11 10:53:04,664 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:53:04,665 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :null
+2021-05-11 10:53:05,670 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/health
+2021-05-11 10:53:05,671 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:53:05,671 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 10:53:08,294 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /add
+2021-05-11 10:53:08,313 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :application/json
+2021-05-11 10:53:09,035 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /add
+2021-05-11 10:53:09,037 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/json
+2021-05-11 10:53:19,328 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  GET : /test
+2021-05-11 10:53:19,331 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :text/plain;charset=UTF-8
+2021-05-11 10:53:24,054 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/health
+2021-05-11 10:53:24,055 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:53:24,055 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 10:56:17,411 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:56:19,500 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 10:56:20,222 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 10:56:20,222 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 10:56:20,242 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 10:56:20,960 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 10:56:21,144 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:56:21,153 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 10:56:21,153 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 10:56:21,232 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 10:56:21,232 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 971 ms
+2021-05-11 10:56:21,526 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:56:22,027 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:56:22,069 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:56:22,090 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.259 seconds (JVM running for 3.59)
+2021-05-11 10:56:26,337 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:56:26,337 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:56:26,339 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-05-11 10:56:26,344 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /actuator/health
+2021-05-11 10:56:26,353 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:56:26,354 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :null
+2021-05-11 10:56:27,384 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/health
+2021-05-11 10:56:27,385 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 10:56:27,385 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 11:00:04,592 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:02:22,816 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:02:27,954 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 11:02:27,954 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 11:02:29,614 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:02:30,355 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:02:30,567 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:02:30,577 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:02:30,577 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:02:30,666 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:02:30,667 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1034 ms
+2021-05-11 11:02:30,977 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:02:32,471 [INFO] org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2021-05-11 11:02:32,502 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:02:32,550 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:02:33,556 [INFO] org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2021-05-11 11:02:33,574 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 18.445 seconds (JVM running for 18.776)
+2021-05-11 11:02:39,533 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:02:39,534 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:02:39,535 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-05-11 11:02:39,540 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /actuator/health
+2021-05-11 11:02:39,548 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:02:39,549 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :null
+2021-05-11 11:02:40,698 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/health
+2021-05-11 11:02:40,699 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:02:40,699 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 11:03:43,589 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:03:45,617 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:03:45,702 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:03:45,703 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:03:45,708 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:03:46,372 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:03:46,563 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:03:46,571 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:03:46,571 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:03:46,648 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:03:46,648 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 922 ms
+2021-05-11 11:03:46,978 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:03:47,503 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:03:47,550 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:03:47,567 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 2.609 seconds (JVM running for 2.954)
+2021-05-11 11:03:52,209 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:03:52,210 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:03:52,211 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-05-11 11:03:52,217 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  POST : /add
+2021-05-11 11:03:52,276 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :application/json
+2021-05-11 11:04:02,220 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  GET : /test
+2021-05-11 11:04:02,224 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:04:08,861 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /actuator/health
+2021-05-11 11:04:08,863 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:04:08,863 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 11:04:09,774 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/health
+2021-05-11 11:04:09,775 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:04:09,775 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 11:04:10,707 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/health
+2021-05-11 11:04:10,707 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:04:10,707 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 11:04:32,064 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/info
+2021-05-11 11:04:32,065 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:04:32,066 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :null
+2021-05-11 11:04:57,279 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /health
+2021-05-11 11:04:57,283 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 11:06:54,346 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:08:12,670 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:08:12,774 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:08:12,774 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:08:12,780 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:08:13,663 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:08:13,957 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:08:13,972 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:08:13,973 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:08:14,075 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:08:14,075 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1275 ms
+2021-05-11 11:08:14,423 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:08:15,053 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:08:15,107 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:08:15,126 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.275 seconds (JVM running for 3.727)
+2021-05-11 11:08:17,840 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:08:17,841 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:08:17,842 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-05-11 11:08:17,850 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  POST : /health
+2021-05-11 11:08:17,868 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :null
+2021-05-11 11:08:26,846 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  GET : /health
+2021-05-11 11:08:26,853 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 11:09:49,607 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator
+2021-05-11 11:09:49,610 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:09:49,610 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 11:10:13,176 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  GET : /actuator
+2021-05-11 11:10:13,192 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:10:28,544 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  GET : /actuator/health
+2021-05-11 11:10:28,558 [INFO] org.springframework.amqp.rabbit.connection.CachingConnectionFactory [http-nio-8080-exec-8] Attempting to connect to: [localhost:5672]
+2021-05-11 11:10:28,575 [WARN] org.springframework.boot.actuate.amqp.RabbitHealthIndicator [http-nio-8080-exec-8] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:216) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2132) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2105) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2085) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:290) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:373) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.logger.LogFilter.doFilter(LogFilter.java:26) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.filters.ServiceFilter.doFilter(ServiceFilter.java:31) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.10.0.jar:5.10.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:613) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	... 87 common frames omitted
+2021-05-11 11:10:28,594 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Fetching config from server at : http://localhost:8081
+2021-05-11 11:10:28,599 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:10:28,600 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:10:28,615 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:11:40,858 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  GET : /actuator/health
+2021-05-11 11:11:40,859 [INFO] org.springframework.amqp.rabbit.connection.CachingConnectionFactory [http-nio-8080-exec-10] Attempting to connect to: [localhost:5672]
+2021-05-11 11:11:40,862 [WARN] org.springframework.boot.actuate.amqp.RabbitHealthIndicator [http-nio-8080-exec-10] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:216) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2132) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2105) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2085) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:290) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:373) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.logger.LogFilter.doFilter(LogFilter.java:26) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.filters.ServiceFilter.doFilter(ServiceFilter.java:31) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.10.0.jar:5.10.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:613) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	... 87 common frames omitted
+2021-05-11 11:11:40,865 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-10] Fetching config from server at : http://localhost:8081
+2021-05-11 11:11:40,868 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-10] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:11:40,868 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-10] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:11:40,870 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:12:19,667 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:12:27,326 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:12:27,426 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:12:27,427 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:12:27,433 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:12:28,190 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=0dd9e0d1-54e6-3b43-8ad3-3f677d2993da
+2021-05-11 11:12:28,414 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:12:28,427 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:12:28,427 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:12:28,525 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:12:28,525 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1072 ms
+2021-05-11 11:12:28,849 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:12:29,177 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:12:29,221 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:12:29,235 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 6.688 seconds (JVM running for 7.079)
+2021-05-11 11:12:33,249 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:12:33,249 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:12:33,251 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2021-05-11 11:12:33,259 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  GET : /actuator/health
+2021-05-11 11:12:33,314 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Fetching config from server at : http://localhost:8081
+2021-05-11 11:12:33,319 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:12:33,320 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:12:33,359 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:13:03,038 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:13:36,328 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:13:36,420 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:13:36,420 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:13:36,428 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:13:37,371 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:13:37,659 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:13:37,670 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:13:37,671 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:13:37,772 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:13:37,772 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1320 ms
+2021-05-11 11:13:38,199 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:13:38,825 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:13:38,883 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:13:38,902 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 7.403 seconds (JVM running for 7.83)
+2021-05-11 11:13:42,094 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:13:42,094 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:13:42,097 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 3 ms
+2021-05-11 11:13:42,106 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  GET : /actuator/health
+2021-05-11 11:13:42,144 [INFO] org.springframework.amqp.rabbit.connection.CachingConnectionFactory [http-nio-8080-exec-2] Attempting to connect to: [localhost:5672]
+2021-05-11 11:13:42,158 [WARN] org.springframework.boot.actuate.amqp.RabbitHealthIndicator [http-nio-8080-exec-2] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:216) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2132) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2105) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2085) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:290) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:373) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.logger.LogFilter.doFilter(LogFilter.java:26) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.filters.ServiceFilter.doFilter(ServiceFilter.java:31) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.10.0.jar:5.10.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:613) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	... 87 common frames omitted
+2021-05-11 11:13:42,167 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Fetching config from server at : http://localhost:8081
+2021-05-11 11:13:42,172 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:13:42,173 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-2] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:13:42,220 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:13:57,832 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  GET : /test
+2021-05-11 11:13:57,841 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:14:01,248 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /add
+2021-05-11 11:14:01,268 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/json
+2021-05-11 11:14:02,301 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /add
+2021-05-11 11:14:02,306 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :application/json
+2021-05-11 11:14:06,330 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  GET : /test
+2021-05-11 11:14:06,332 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:14:10,189 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  GET : /actuator/health
+2021-05-11 11:14:10,190 [INFO] org.springframework.amqp.rabbit.connection.CachingConnectionFactory [http-nio-8080-exec-8] Attempting to connect to: [localhost:5672]
+2021-05-11 11:14:10,193 [WARN] org.springframework.boot.actuate.amqp.RabbitHealthIndicator [http-nio-8080-exec-8] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:216) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2132) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2105) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2085) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:290) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:373) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.logger.LogFilter.doFilter(LogFilter.java:26) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.filters.ServiceFilter.doFilter(ServiceFilter.java:31) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.10.0.jar:5.10.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:613) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	... 87 common frames omitted
+2021-05-11 11:14:10,197 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Fetching config from server at : http://localhost:8081
+2021-05-11 11:14:10,201 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:14:10,202 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:14:10,203 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:14:15,693 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  GET : /actuator/
+2021-05-11 11:14:15,702 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:15:40,897 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:15:45,229 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:15:45,313 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:15:45,314 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:15:45,321 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:15:46,005 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=0dd9e0d1-54e6-3b43-8ad3-3f677d2993da
+2021-05-11 11:15:46,235 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:15:46,250 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:15:46,250 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:15:46,355 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:15:46,356 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1014 ms
+2021-05-11 11:15:46,674 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:15:47,002 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:15:47,052 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:15:47,074 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 2.645 seconds (JVM running for 3.02)
+2021-05-11 11:15:51,935 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:15:51,936 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:15:51,937 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-05-11 11:15:51,945 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  GET : /actuator/
+2021-05-11 11:15:52,012 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:13,811 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  GET : /actuator/
+2021-05-11 11:16:13,813 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:14,467 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  GET : /actuator/
+2021-05-11 11:16:14,470 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:21,454 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  GET : /actuator/health
+2021-05-11 11:16:21,474 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-5] Fetching config from server at : http://localhost:8081
+2021-05-11 11:16:21,480 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-5] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:16:21,480 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-5] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:16:21,491 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:27,787 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  GET : /actuator/
+2021-05-11 11:16:27,791 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:39,314 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  GET : /actuator/refresh
+2021-05-11 11:16:39,317 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-05-11 11:16:39,317 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 11:16:45,029 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Request  POST : /actuator/refresh
+2021-05-11 11:16:46,055 [INFO] org.springframework.cloud.commons.util.InetUtils [http-nio-8080-exec-8] Cannot determine local hostname
+2021-05-11 11:16:46,167 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Fetching config from server at : http://localhost:8081
+2021-05-11 11:16:46,172 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:16:46,172 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-8] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:16:46,174 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-8] The following profiles are active: development
+2021-05-11 11:16:46,185 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-8] Started application in 1.14 seconds (JVM running for 62.129)
+2021-05-11 11:16:46,373 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-8] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:16:54,514 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  POST : /actuator/
+2021-05-11 11:16:54,515 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-11 11:16:54,515 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :null
+2021-05-11 11:16:59,196 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  GET : /actuator/
+2021-05-11 11:16:59,198 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:17:19,774 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:17:23,085 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:17:23,181 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:17:23,181 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:17:23,191 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:17:24,118 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:17:24,399 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:17:24,412 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:17:24,412 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:17:24,511 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:17:24,511 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1295 ms
+2021-05-11 11:17:24,882 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:17:25,546 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:17:25,590 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:17:25,608 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.418 seconds (JVM running for 3.8)
+2021-05-11 11:17:28,974 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:17:28,975 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:17:28,976 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-05-11 11:17:28,986 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Request  GET : /actuator/
+2021-05-11 11:17:29,067 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-2] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:17:43,217 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  GET : /actuator/health
+2021-05-11 11:17:43,228 [INFO] org.springframework.amqp.rabbit.connection.CachingConnectionFactory [http-nio-8080-exec-3] Attempting to connect to: [localhost:5672]
+2021-05-11 11:17:43,240 [WARN] org.springframework.boot.actuate.amqp.RabbitHealthIndicator [http-nio-8080-exec-3] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:216) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2132) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2105) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2085) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:290) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:373) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.logger.LogFilter.doFilter(LogFilter.java:26) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at com.tw.filters.ServiceFilter.doFilter(ServiceFilter.java:31) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.10.0.jar:5.10.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.10.0.jar:5.10.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:613) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.3.6.jar:2.3.6]
+	... 87 common frames omitted
+2021-05-11 11:17:43,260 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-3] Fetching config from server at : http://localhost:8081
+2021-05-11 11:17:43,266 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-3] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:17:43,266 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-3] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:17:43,277 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:17:47,712 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  GET : /actuator/info
+2021-05-11 11:17:47,716 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:17:56,758 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/refresh
+2021-05-11 11:17:57,779 [INFO] org.springframework.cloud.commons.util.InetUtils [http-nio-8080-exec-6] Cannot determine local hostname
+2021-05-11 11:17:57,886 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-6] Fetching config from server at : http://localhost:8081
+2021-05-11 11:17:57,893 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-6] Connect Timeout Exception on Url - http://localhost:8081. Will be trying the next url if available
+2021-05-11 11:17:57,894 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-6] Could not locate PropertySource: I/O error on GET request for "http://localhost:8081/spring-config-server/development": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-05-11 11:17:57,896 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-6] The following profiles are active: development
+2021-05-11 11:17:57,907 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-6] Started application in 1.14 seconds (JVM running for 36.098)
+2021-05-11 11:17:58,088 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:18:04,350 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 11:18:04,357 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :null
+2021-05-11 11:19:11,416 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Request  GET : /test
+2021-05-11 11:19:11,425 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-9] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:19:16,198 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Request  GET : /test
+2021-05-11 11:19:16,201 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-10] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:19:17,133 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  GET : /test
+2021-05-11 11:19:17,136 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:19:22,167 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:19:24,941 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8081
+2021-05-11 11:19:25,621 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 11:19:25,623 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 11:19:25,650 [INFO] com.tw.CalculatorApplication [main] The following profiles are active: development
+2021-05-11 11:19:26,648 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2b937236-6c3f-3674-b1b3-cbf0f234c00f
+2021-05-11 11:19:26,886 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-05-11 11:19:26,896 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-11 11:19:26,896 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-11 11:19:27,003 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-11 11:19:27,003 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1326 ms
+2021-05-11 11:19:27,357 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:19:28,023 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-05-11 11:19:28,080 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 11:19:28,098 [INFO] com.tw.CalculatorApplication [main] Started CalculatorApplication in 3.989 seconds (JVM running for 4.396)
+2021-05-11 11:19:34,687 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:19:34,687 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:19:34,690 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-05-11 11:19:34,696 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Request  GET : /test
+2021-05-11 11:19:34,744 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-1] Logging Response :text/plain;charset=UTF-8
+2021-05-11 11:19:38,461 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Request  POST : /actuator/bus-refresh
+2021-05-11 11:19:38,466 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-3] Logging Response :null
+2021-05-11 11:19:42,931 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Request  POST : /actuator/refresh
+2021-05-11 11:19:43,056 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-4] Fetching config from server at : http://localhost:8081
+2021-05-11 11:19:44,159 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [http-nio-8080-exec-4] Located environment: name=spring-config-server, profiles=[development], label=null, version=e0f45d84250a613a57a7db8e3674d624a9aaa6d9, state=null
+2021-05-11 11:19:44,160 [INFO] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [http-nio-8080-exec-4] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baloz/spring-central-config-server/spring-config-server-development.yml'}]
+2021-05-11 11:19:44,166 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-4] The following profiles are active: development
+2021-05-11 11:19:44,177 [INFO] org.springframework.boot.SpringApplication [http-nio-8080-exec-4] Started application in 1.222 seconds (JVM running for 20.474)
+2021-05-11 11:19:44,436 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-4] Logging Response :application/vnd.spring-boot.actuator.v3+json
+2021-05-11 11:19:50,779 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Request  POST : /actuator/bus/refresh
+2021-05-11 11:19:50,782 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-5] Logging Response :null
+2021-05-11 11:19:52,589 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Request  POST : /actuator/bus/refresh
+2021-05-11 11:19:52,592 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-6] Logging Response :null
+2021-05-11 11:19:56,715 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Request  POST : /multiply
+2021-05-11 11:19:56,724 [INFO] com.tw.logger.LogFilter [http-nio-8080-exec-7] Logging Response :application/json
+2021-05-11 11:21:45,651 [INFO] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
